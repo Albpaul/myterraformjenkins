@@ -52,3 +52,12 @@ resource "aws_instance" "web_6" {
     Name = "pauliwa"
   }
 }
+resource "aws_instance" "helloworld" {
+  ami           = "ami-0dfcb1ef8550277af"
+  
+  instance_type = "t3.micro"
+
+  tags = {
+    Name = "jumpology"
+  }
+}
